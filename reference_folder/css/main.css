@@ -9,21 +9,30 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-
-    background-color: black;
+    background: url(../img/yellow_flora.jpeg) repeat;
     color: white;
 }
 
-header, footer {
-    background-color: rgb(101, 101, 101);
+
+main, footer { 
+    text-align: center;
+    background: rgba(255, 255, 255, 0.573);
 }
 
+main {
+    padding-top: 10px;
+    padding-bottom:25%;}
 
-main { text-align: center;}
+article li {
+    margin-left: 20px;
+}
 
-article > h2 { 
-    padding-left: 8px;
-    padding-top: 8px;
+article h2 { 
+    margin: 8px 8px 8px 0px; 
+}
+
+article > ul > li {
+    padding-bottom: 8px;
 }
 
 main > article {
@@ -35,12 +44,14 @@ main > article {
     border-radius: 8px;
     margin: 0 12px;
 }
-#todo { border: 4px solid gray;}
-#inprogress { border: 4px solid green;}
-#done { border: 4px solid red;}
+#todo { background: #93bdc9e3;}
+#inprogress { background: #b0b889e0;
+}
+#done { background: #f9d483d7;
+}
 
-article:first-of-type h2 { color: grey;}
+article:first-of-type h2 { color: #3896b0;}
 
-#inprogress .inprogress {color: green;}
+#inprogress .inprogress {color: rgb(73, 148, 73);}
 
-article:last-of-type h2 { color: red;}
+article:last-of-type h2 { color: #e3a011;}
