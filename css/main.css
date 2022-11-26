@@ -7,12 +7,25 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background: url(../img/yellow_flora.jpeg) repeat;
+    font-family: 'Yeseva One', cursive;
+    background: url(../img/yellow_flora.jpg) repeat;
     color: white;
+    contain: content;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
 }
 
+header h1 {
+    
+    color: black;
+    background: white;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+}
 
 main, footer { 
     text-align: center;
@@ -21,33 +34,89 @@ main, footer {
 
 main {
     padding-top: 10px;
-    padding-bottom:25%;}
-
-article li {
-    margin-left: 20px;
+    padding-bottom:25%;
 }
 
+#howto {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    color: rgb(131, 131, 131);
+    background-color: rgba(255, 255, 255, 0.407);
+}
+#howto p {
+    font-weight: bold;
+}
+
+article ul {
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style-type: none;
+}
+
+
 article h2 { 
-    margin: 8px 8px 8px 0px; 
+    margin: 25px 8px 30px 0px; 
+    text-align: center;
 }
 
 article > ul > li {
-    padding-bottom: 8px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family:'Yeseva One', cursive;
+    color: white;
+}
+
+input[type=text]::placeholder {
+    color: white;
+}
+
+input[type=text]:focus {
+    outline: none;
 }
 
 main > article {
     text-align: left;
     display: inline-block;
-    width: 25%;
-
-    border: thin solid white;
-    border-radius: 8px;
-    margin: 0 12px;
+    width: 30%;
+    margin:12px;    
+    position: relative;
 }
-#todo { background: #93bdc9e3;}
+#todo { background: #9fc4cee1;
+}
+#todo li {
+    border-top: #20758c solid;
+}
+
+#todo li:last-child {
+    padding-bottom: 40px;
+}
+
+
 #inprogress { background: #b0b889e0;
 }
+#inprogress li {
+    border-top: #889742 solid;
+}
+
+#inprogress li:last-child {
+    padding-bottom: 40px;
+}
+
 #done { background: #f9d483d7;
+}
+#done li {
+    border-top: #c28c18 solid;
+}
+
+#done li:last-child {
+    padding-bottom: 40px;
 }
 
 article:first-of-type h2 { color: #3896b0;}
@@ -55,3 +124,20 @@ article:first-of-type h2 { color: #3896b0;}
 #inprogress .inprogress {color: rgb(73, 148, 73);}
 
 article:last-of-type h2 { color: #e3a011;}
+
+.footer {
+    background: white;
+    height: 50px;
+    position:sticky;
+    color: black;
+    text-align: center;
+}
+
+p:last-child {
+    padding-top: 15px;
+}
+
+.footer {
+    font-weight: lighter;
+    color: rgb(131, 131, 131);
+}
