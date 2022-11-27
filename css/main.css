@@ -121,9 +121,61 @@ main > article {
 
 article:first-of-type h2 { color: #3896b0;}
 
-#inprogress .inprogress {color: rgb(73, 148, 73);}
+#inprogress .inprogress {color: #889742;}
 
 article:last-of-type h2 { color: #e3a011;}
+
+input[type=checkbox] {
+    width: 100px;
+    position: absolute;
+}
+
+.cb-green:checked {
+    width: 0px;
+    height: 0px;
+    position: absolute ;
+}
+.cb-green:checked::after{
+    content: '\2713';/*this makes a checkmark*/
+    width: 25px;
+    height: 25px;
+    padding: 0px 0px 34px 240px;
+    position: absolute;
+    top: -25px;
+    right: -83px;
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #f3ffba;
+    background-color: #8797427b;
+    border-top: 10px solid #87974200;
+    border-right: 15px solid #87974200;
+
+    animation: fadeIn 0.7s;
+}
+
+.cb-yellow:checked {
+    background-color: #889742;
+    width: 0px;
+    height: 0px;
+    position: absolute ;
+}
+.cb-yellow:checked::after{
+    content: '\2713';/*this makes a checkmark*/
+    width: 25px;
+    height: 25px;
+    padding: 0px 0px 34px 240px;
+    position: absolute;
+    top: -25px ; 
+    right: -83px;
+    font-size: 20pt;
+    font-weight: bolder;
+    color: #fff2d7;
+    background-color: #e3a01167;
+    border-top: 10px solid #e3a01100;
+    border-right: 15px solid #e3a01100;
+
+    animation: fadeIn 0.7s;
+}
 
 .footer {
     background: white;
@@ -141,3 +193,8 @@ p:last-child {
     font-weight: lighter;
     color: rgb(131, 131, 131);
 }
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
