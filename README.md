@@ -2,7 +2,8 @@
   <content><![CDATA[
 # ${1:khan_t_css_pseudo-selectors}
 
-## My To-Do List
+
+# My To-Do List
 An interactive and customizable To-Do list;
 
 ### Edit & add to your lists
